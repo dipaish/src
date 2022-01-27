@@ -58,7 +58,6 @@ echo DAY;
 # echo day;
 
 # HTML codes and php save the follwing code in a new php file 
-
 /* 
 <!DOCTYPE html>
 <html lang="en">
@@ -70,9 +69,9 @@ echo DAY;
 </head>
 <body>
     <p>
-    Hello <?php echo $name; ?>
+    <h1>Hello Today is <?php echo date('l \t\h\e jS'); ?></h1>
     </p>
 </body>
 </html>
-/*
+*/
 ?>
