@@ -33,6 +33,7 @@ echo "<h5 class='specialH5'>I love using PHP!</h5>";
 $my_string = "Hello World. My name is: ";
 $my_number = 5;
 $my_letter = "a";
+$name = "Deepak";
 echo $my_string;
 echo $my_number;
 echo $my_letter;
@@ -55,4 +56,23 @@ define("DAY", "We have started to learn PHP");
 echo DAY;
 # on running the following code you get a "Fatal Error" message
 # echo day;
+
+# HTML codes and php save the follwing code in a new php file 
+
+/* 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo "This is my first php page"; ?></title>
+</head>
+<body>
+    <p>
+    Hello <?php echo $name; ?>
+    </p>
+</body>
+</html>
+/*
 ?>
