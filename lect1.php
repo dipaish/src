@@ -64,7 +64,7 @@ echo "<br>" . $my_string . "Deepak ";
 $name = "John"; // global variable
 // global variable is not accessible within a function 
 function myfunction() {
-    echo "<hr> My name is $name";
+    // echo "<hr> My name is $name";
 }
 // call the function, since it's a global variable, it is not accessible wihtin a function
 myfunction();
