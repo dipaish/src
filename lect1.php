@@ -40,6 +40,21 @@ echo $my_letter;
 # you may use period sign as below
 echo "<br>" . $my_string . "Deepak ";
 
+#----------------------------------------------------------------------------------
+/* Variable Scope
+- 3 scopes
+    - local
+        - A variable that is declared inside a function has local scope.
+        - It is accessible only within the function where it is created.
+    - global
+        - A variable that is declared outside a function has global scope
+        - Global scope variables are accessible outside the function
+
+    - static
+
+
+*/
+
 #php constant 
 # A constant is an identifier (name) for a simple value. 
 /*
