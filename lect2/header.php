@@ -50,7 +50,7 @@
 </div>   
 <div class="container" style="margin-top:5px">
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <h3>Some Links</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
@@ -64,4 +64,4 @@
         </li>
       </ul>
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-10">
