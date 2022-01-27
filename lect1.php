@@ -85,7 +85,7 @@ fun1();
 # syntax: define(name, value, case-insensitive)
 # example 1 
 define ("const1",80);
-echo const1;
+echo "Output of Constatnt: " . const1 . "<br>";
 #example 2 
 define("DAY", "We have started to learn PHP");
 echo DAY;
