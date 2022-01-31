@@ -31,7 +31,7 @@ echo "<h5 class='specialH5'>I love using PHP!</h5>";
 # variable name can use only alpha numeric characters and underscores
 
 $my_string = "Hello World. My name is: ";
-$my_number = 5;
+$my_number = 55;
 $my_letter = "a";
 $name = "Deepak";
 echo $my_string;
