@@ -40,6 +40,41 @@ echo $my_letter;
 # you may use period sign as below
 echo "<br>" . $my_string . "Deepak ";
 
+#----------------------------------------------------------------------------------
+/* Variable Scope
+- 3 scopes
+    - local
+        - A variable that is declared inside a function has local scope.
+        - It is accessible only within the function where it is created.
+    - global
+        - A variable that is declared outside a function has global scope
+        - Global scope variables are accessible outside the function
+
+    - static
+        - Variables are deleted upon the execution or completion of function
+        - Sometimes, you need the value of a local variable not to be deleted
+        - to not delete the value of a local variable upone completion or execution, use static keyword
+
+    - to access a global variable from within a function
+        - you need to use the global keyword
+
+
+*/
+# Example global scope
+$name = "John"; // global variable
+// global variable is not accessible within a function 
+function myfunction() {
+    // echo "<hr> My name is $name";
+}
+// call the function, since it's a global variable, it is not accessible wihtin a function
+myfunction();
+    echo "<hr> My name is $name <hr>";
+// use global keyword to access a global variable within a function
+function fun1() {
+    global $name;
+    echo "<hr> My name is $name <hr>";
+}
+fun1();
 #php constant 
 # A constant is an identifier (name) for a simple value. 
 /*
@@ -50,7 +85,7 @@ echo "<br>" . $my_string . "Deepak ";
 # syntax: define(name, value, case-insensitive)
 # example 1 
 define ("const1",80);
-echo const1;
+echo "Output of Constatnt: " . const1 . "<br>";
 #example 2 
 define("DAY", "We have started to learn PHP");
 echo DAY;
