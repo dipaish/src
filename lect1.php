@@ -75,6 +75,16 @@ function fun1() {
     echo "<hr> My name is $name <hr>";
 }
 fun1();
+
+# example static 
+function test() {
+    static $a = 0;
+    $a ++;
+    return $a;
+  }
+  echo test() ."<br>";
+  echo test() ."<br>";
+  
 #php constant 
 # A constant is an identifier (name) for a simple value. 
 /*
