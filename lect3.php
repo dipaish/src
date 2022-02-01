@@ -194,4 +194,7 @@ foreach ($x as $value) {
 */
 
 # Lets learn to use GitHub -- very important 
+# Important Extensions for VSC 
+# GitHub
+# Live Share
 ?>
