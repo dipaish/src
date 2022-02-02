@@ -13,7 +13,7 @@ if (condition or variable to test)
 echo "<h3>Example: if statement </h3>";
 $a = 1;
 if ($a == 1){
-    echo "the condition is true <br>"; 
+    echo "the condition is true <br>";
 }
 
 # if .. else statement 
@@ -166,7 +166,7 @@ for (init; condition; increment)
     }
 */
 echo "<h3>Example: For loop</h3>";
-for ($x=0; $x<=5; $x++)
+for ($x=5; $x>=0; $x--)
 {
 echo "The number is : $x <br />";
 }
