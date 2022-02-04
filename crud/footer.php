@@ -1,17 +1,14 @@
-</div>
-    </div>
-  </div>
-<footer class="page-footer font-small blue bg-light">
+
+<footer class="page-footer font-small blue bg-light" style="margin-top: 10px;">
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright
+    <div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?> Copyright
     </div>
     <!-- Copyright -->
   
   </footer>
-</div>
 
-
+  </div>
 <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
