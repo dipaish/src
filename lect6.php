@@ -72,5 +72,36 @@ function names($n1,$n2,$n3){
     return $n1 . "<br> " . $n2 . "<br> " . $n3 . "<br>";
 }
 echo names("DeepaK", "JUHA", "pekka");
+
+/*
+# Include & require in PHP 
+    - To use external functions or libraries
+    - Functions or libraries saves in external files can be pulled by using include & require
+    - Include
+        - To fetch a particular file & load all its contents
+Example: 
+include 'filename.php';
+
+# Include_once
+ - Everytime on issuing include directive will include the requested file again
+  even if the file is already inserted.
+  - Let’s assue that library.php is already included in your file. 
+        Another library library1.php also needs to be included in your files and 
+        library1.php includes library.php. Therefore, on including
+        library1.php will produce error message 
+        as this will define the same constant or function multiple times.
+        To avoid this kind of situation, include_once is used. 
+- Best to stick with include_once rather than include statement
+Example: 
+include_once 'filename.php';
+
+# Require & Require_Once
+    - Include or include_once attemts to inclde the requested file. The executuion of prgram 
+        continues even if the file is not found.
+    - When it is must to include  a file, require or require_once should be used
+    - Like include_once better to stick with require_once
+Example: 
+require_once 'filename.php';
+*/
 ?>
 
