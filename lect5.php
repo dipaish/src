@@ -43,7 +43,7 @@ echo "<h2> Example of an indexed Array </h2>";
 $course=array("php", "JavaScript", "Databases");
 echo $course[0] ." ". $course[1]; 
 echo "<h2> Looping through an indexed Array </h2>";
-$city = array('Kajaani', 'Oulu', 'Helsinki', 'Kemi', 'Tornio');
+$city = array('Kajaani', 'Oulu', 'Helsinki', 'Kemi', 'Tornio', 'Tampere');
 $num = count($city);
 for ($i=0; $i < $num; $i++) {
     echo "$i) $city[$i] <br>";
@@ -54,7 +54,7 @@ for ($i=0; $i < $num; $i++) {
  - Associative arrays helps to reference items in an array by name rather than by number
  - Creating an associative array 
     Syntax 1: 
-    $varname = array ("Keyname" = "value","Keyname1" = "value1" ) 
+    $varname = array ("Keyname" => "value","Keyname1" => "value1" ) 
 
     Syntax 2: 
     $varname['keyname'] = "value";
@@ -75,11 +75,18 @@ $car = array("BMW"=>50000, "Tesla"=>60000,"Mazda"=>45000);
 foreach($car as $x => $price) {
     echo " $x costs $price <br>";
 //try to put this record in a table
+/* 
+Brand   Price
+BMW     50000
+Tesla   60000
+Mazda   45000
+
+*/
 }
 
 # Multi Dimensional arrays (Arrays of arrays)
 /*
-- Arrays with more than one dimenstion 
+- Arrays with more than one dimension 
 - Each element in the main array can also be an array
 - Each element in the sub array can also be an array & so on 
 */
@@ -148,3 +155,5 @@ for ($i=0; $i<$len; $i++){
 
 # get to pptx file go through other examples 
 ?>
+
+
