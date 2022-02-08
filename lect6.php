@@ -36,11 +36,12 @@ function add($name){ // single parameter $name
 }
 add("Juha");
 add("Timo");
-function add1($name, $address){ // double parameters $name & $ address
+function add1($name="name1", $address="Helsinki"){ // double parameters $name & $ address
     echo "$name lives in  $address <br>";
 }
 add1("Juha", "Tornio");
 add1("Timo", "Helsinki");
+add1();
 
 /* Default argument value
     - Using a default parameter allows function to take the default value as argument
