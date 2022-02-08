@@ -1,7 +1,7 @@
 
 <?php
-include 'header.php';
-require 'db.php'; 
+include_once 'header.php';
+require_once 'db.php'; 
 $sql = "select * from studentsinfo";
 $result = $conn->query($sql);?>
 <table class="table">
