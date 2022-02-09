@@ -123,7 +123,7 @@ echo "&copy" . date("Y");
 //date format example
 echo "Today is " . date("Y-m-d") . "<br>";
 
-//to get time
+//to get current time
 echo "The current time is " . date("h:i:sa");
 
 
