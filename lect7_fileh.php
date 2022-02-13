@@ -2,7 +2,7 @@
 //file handling 
 //1. file_exists()function: to check if file exists
 echo "<h2>Checking if file exists or not</h2>";
-if (file_exists("lect2/aboutus1.php")){
+if (file_exists("lect2/aboutus.php")){
     echo "file exisits";
 }
 else 
@@ -12,13 +12,14 @@ else
     // Step 1: Use fopen function to open a file
     // Step 2: Use functions like: fwrite to write, fread or fgets to read
     // Step 3: Close the file
-    /* $newfile = fopen('file.txt','a') or die ("Failed to create a file");
+    
+    $newfile = fopen('file.txt','w') or die ("Failed to create a file");
     $txt = "Hello world this is interesting. <br>";
     fwrite($newfile, $txt);
     fclose($newfile);
 
     echo "<hr><h2>Creating a file </h2>";
-    echo "<hr><h2>Reading from a file </h2>"; */
+    echo "<hr><h2>Reading from a file </h2>"; 
     //3. Reading from a file - fread()
     // https://www.php.net/manual/en/function.fread.php
 
@@ -46,19 +47,22 @@ if (FALSE === $handle) {
 $contents = stream_get_contents($handle);
 echo $contents;
 fclose($handle);
-
+*/
  //4. Copying a file : copy() function
-copy('file11.txt', 'file11cp.txt') or die ("Could not copy file");
+/* 
+copy('file11.txt', 'file11cp1.txt') or die ("Could not copy file");
 echo "file copied successfully";
-
+*/
 //5. rename() - to rename or move a file or directory
-if(rename('file11cpp.txt','folder1/newfile.txt')){
+/*
+if(rename('file11cp.txt','folder1/newfile.txt')){
     echo "file renamed successfully";
 }
 else {echo "could not rename file";}
-
+*/
 //6. Deleting a file - unlink()
-if (unlink('folder1/filename.txt'))
+/*
+if (unlink('folder1/newfile.txt'))
 {
     echo "file deleted successfully";
 }
@@ -69,10 +73,10 @@ When many users try to write the same file, it can become corruputed.
 Also when one user is writing a file and the other reading it, the person reading it can get odd results
 To handle simultaneous users, flock() function can be used
 Flock() function queues up all other requests to access a file until your program releases the lock.
-
+*/
 
 //open the file r+ for both reading & writing 
-$file = fopen('file99.txt', 'r+') or die('failed to open file');
+$file = fopen('file.txt', 'r+') or die('failed to open file');
 //fgets to read the single line in your file
 $text = fgets($file);
 //flock to set file lock using LOCK_EX parameter
@@ -85,22 +89,20 @@ if (flock($file, LOCK_EX)){
 else
 {echo "file updated successfully";}
 fclose($file);
-*/
+
 echo "<hr><h2>Reading an entire file</h2>";
 //8. Reading an entire file: file_get_contents
 echo file_get_contents('file.txt');
-// echo file_get_contents('https://yle.fi/uutiset/osasto/news/')
+// echo file_get_contents('https://yle.fi/uutiset/osasto/news/');
 
 //9. Uploading Files :https://www.php.net/manual/en/features.file-upload.php
 // Step 1: Create a form to upload file
 ?>
 <hr><h2>Simple File Upload System </h2>
+
 <form enctype="multipart/form-data" action="upload.php" method="POST">
-    <!-- MAX_FILE_SIZE must precede the file input field -->
-    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-    <!-- Name of input element determines name in $_FILES array -->
-    Send this file: <input name="userfile" type="file" />
-    <input type="submit" value="Send File" />
+    Select file to upload: <input name="userfile" type="file" required><br>
+    <input type="submit" value="Upload File" />
 </form>
 <hr><h2>PHP Date function </h2>
 <?php 
