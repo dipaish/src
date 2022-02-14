@@ -4,6 +4,7 @@
 // Each one of you will first do it in your own repo (or branch) and then the final version in the team repo. 
 // This task is not graded however will have some impact on the final grade
 // It also will help you to practice utlizing GitHub in project work
+
 # 1. Create/read a text file by using approprite php functions 
     # Step 1: check if file exists or not
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
