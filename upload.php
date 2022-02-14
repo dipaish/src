@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Europe/Helsinki');
 //target_dir is the location where you want your files to be uploaded
 $dest = "folder1/".basename($_FILES["userfile"] ["name"]);
     if (move_uploaded_file($_FILES["userfile"] ["tmp_name"], $dest)){

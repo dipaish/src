@@ -1,4 +1,5 @@
 <?php 
+date_default_timezone_set('Europe/Helsinki');
 //file handling 
 //1. file_exists()function: to check if file exists
 echo "<h2>Checking if file exists or not</h2>";
