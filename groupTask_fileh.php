@@ -5,13 +5,13 @@
 // This task is not graded however will have some impact on the final grade
 // It also will help you to practice utlizing GitHub in project work
 
-# 1. Create/read a text file by using approprite php functions 
+# 1. Create/read a text file by using approprite php functions https://www.youtube.com/watch?v=DEc5Qi_goH0
     # Step 1: check if file exists or not
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     # Step 4: Close the file 
 
-#2. Uploaing files 
+#2. Uploaing files https://www.youtube.com/watch?v=DEc5Qi_goH0
      # Step 1: Create a simple html form to upload a file. 
      # Step 2: You are required to limit the upload file size to 2 MB. 
      # Step 3: Make sure that users can submit only images. 

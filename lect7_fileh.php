@@ -100,7 +100,6 @@ echo file_get_contents('file.txt');
 // Step 1: Create a form to upload file
 ?>
 <hr><h2>Simple File Upload System </h2>
-
 <form enctype="multipart/form-data" action="upload.php" method="POST">
     Select file to upload: <input name="userfile" type="file" required><br>
     <input type="submit" value="Upload File" />
