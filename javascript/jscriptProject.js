@@ -5,7 +5,7 @@
 - I will check this with all teams at 14:00 
 - At 14:00, we will get back to Zoom and in the main session 
 each team will show the javascript implementation briefly
-- 12:45 - 13:50, you can find me in teams if you need help.
+- 12:45 - 13:50, we will continue to be in breakout session.
 - Put most of your javascript code in an external file and use it within your pages from the 
 external file.
 
